@@ -1,15 +1,30 @@
-import { FaApple, FaRegUser } from "react-icons/fa";
+import { FaApple, FaHeart, FaRegUser } from "react-icons/fa";
 import az from "../../img/az.png";
-import { MdKeyboardArrowDown } from "react-icons/md";
+import irsad from "../../img/irsad.png";
+import { MdKeyboardArrowDown, MdMenu } from "react-icons/md";
+import { IoIosSearch } from "react-icons/io";
+import { GiScales } from "react-icons/gi";
+import { CiShoppingCart } from "react-icons/ci";
+import { LuCreditCard } from "react-icons/lu";
 const Navbar = () => {
   return (
     <>
         <header className="flex container h-[72px]">
             <nav className="flex">
                 <ul className="flex items-center gap-3">
-                    <li className="cursor-pointer hover:border-b-4 hover:border-b-black text-gray-500">Kampaniyalar</li>
-                    <li className="cursor-pointer hover:border-b-4 hover:border-b-black text-gray-500">Mağazalar</li>
-                    <li className="cursor-pointer hover:border-b-4 hover:border-b-black text-gray-500">Korporativ</li>
+                    <li className="cursor-pointer hover:border-b-4 hover:border-b-black text-gray-500">
+                        <a href="/kampaniyalar">
+                            Kampaniyalar
+                        </a>
+                    </li>
+                    <li className="cursor-pointer hover:border-b-4 hover:border-b-black text-gray-500">
+                        <a href="/magazalar">
+                            Mağazalar
+                        </a>
+                    </li>
+                    <li className="cursor-pointer hover:border-b-4 hover:border-b-black text-gray-500">
+                        <a href="/korporativ">Korporativ</a>
+                    </li>
                     <li className="cursor-pointer hover:border-b-4 hover:border-b-black font-bold text-lg">
                         SAMSUNG
                     </li>
@@ -51,6 +66,41 @@ const Navbar = () => {
             </nav>
         </header>
         <div className="w-full h-[1px] bg-gray-400"></div>
+        <div className="flex items-center container">
+                    <a href="/"><img className="w-28 h-20 mr-10" src={irsad}/></a>
+                    <button className="flex items-center gap-2 bg-green-600 text-white rounded-md px-4 py-2.5 border-[2px] border-green-600 hover:bg-white hover:text-green-600 mr-3">
+                        <MdMenu size={26}/><p>Kataloq</p>
+                    </button>
+                    <input type="text" className="border-[2px] border-gray-300 rounded-lg w-[500px] h-12 pl-6 focus-visible:outline-none"/>
+                    <div className="absolute left-[865px] flex items-center">
+                        <div className="w-[1px] h-7 bg-gray-300 mr-2.5"></div>
+                        <IoIosSearch size={24} color="gray"/>
+                    </div>
+                    <ul className="flex ml-12 gap-8">
+                        <li className="flex flex-col text-center items-center justify-center cursor-pointer hover:text-orange-500">
+                            <a href="/müqayisə" className="flex flex-col text-center items-center justify-center">
+                                <GiScales size={24}/>
+                                <p>Müqayisə</p>
+                            </a>
+                        </li>
+                        <li className="flex flex-col text-center items-center justify-center cursor-pointer hover:text-orange-500">
+                            <a href="/liked" className="flex flex-col text-center items-center justify-center">
+                                <FaHeart size={24}/>
+                                <p>Bəyəndim</p>
+                            </a>
+                        </li>
+                        <li className="flex flex-col text-center items-center justify-center cursor-pointer hover:text-orange-500">
+                            <a href="/" className="flex flex-col text-center items-center justify-center">
+                                <CiShoppingCart size={24}/>
+                                <p>Səbət</p>
+                            </a>
+                        </li>
+                    </ul>
+                    <button className="border-[2px] border-green-600 text-green-600 py-3 px-5 flex flex-col text-center justify-center items-center rounded-lg ml-auto hover:bg-green-600 hover:text-white">
+                        <LuCreditCard size={24}/>
+                        <p className="text-sm font-semibold">Aylıq ödəniş</p>
+                    </button>
+        </div>
     </>
   );
 };

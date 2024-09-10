@@ -4,7 +4,7 @@ import Sold from "./Sold";
 import Youtube from "./Youtube";
 import QrKod from "./QrKod";
 import Line from "../components/Irshad-line/Line";
-import Footer from "./Footer";
+import Footer from "../components/Footer/Footer";
 const Home = () => {
   return (
     <>
@@ -14,7 +14,6 @@ const Home = () => {
         <Youtube />
         <QrKod />
         <Line />
-        <Footer />
     </>
   );
 };

@@ -11,9 +11,11 @@ const Youtube = () => {
                         <h1 className="text-4xl font-semibold">Məhsul icmalı</h1>
                         <h1 className="text-4xl font-semibold text-black/40">İrşad Youtube</h1>
                     </div>
-                    <button className="flex items-center gap-4 bg-red-500 text-white p-3 text-lg font-medium rounded-xl hover:bg-white hover:text-red-500 border-[2px] border-red-500">
-                        <PiYoutubeLogoFill size={28}/>
-                        <p>Youtube hesabına keç</p>
+                    <button className="bg-red-500 text-white p-3 text-lg font-medium rounded-xl hover:bg-white hover:text-red-500 border-[2px] border-red-500">
+                        <a className="flex items-center gap-4" href="https://www.youtube.com/c/irshad">
+                            <PiYoutubeLogoFill size={28}/>
+                            <p>Youtube hesabına keç</p>
+                        </a>
                     </button>
                 </div>
                 <div className="mt-10 flex gap-[23px]">
@@ -21,7 +23,9 @@ const Youtube = () => {
                         <div className="relative cursor-pointer">
                             <img src={woman} className="max-w-[450px] h-[300px] rounded-xl relative"/>
                             <div className="w-20 h-20 bg-white absolute top-24 rounded-full left-48 text-green-600 hover:bg-green-600 hover:text-white items-center justify-center flex">
-                                <RxTriangleRight size={64}/>
+                                <a href="https://www.youtube.com/watch?v=BDXkW2yPVPc">
+                                    <RxTriangleRight size={64}/>
+                                </a>
                             </div>
                         </div>
                         <div className="flex flex-col gap-4">
@@ -37,7 +41,9 @@ const Youtube = () => {
                         <div className="relative cursor-pointer">
                             <img src={man} className="max-w-[450px] h-[300px] rounded-xl relative"/>
                             <div className="w-20 h-20 bg-white absolute top-24 rounded-full left-48 text-green-600 hover:bg-green-600 hover:text-white items-center justify-center flex">
-                                <RxTriangleRight size={64}/>
+                                <a href="https://www.youtube.com/watch?v=ghGySce348c">
+                                    <RxTriangleRight size={64}/>
+                                </a>
                             </div>
                         </div>
                         <div className="flex flex-col">
@@ -54,7 +60,9 @@ const Youtube = () => {
                         <div className="relative cursor-pointer">
                             <img src={man2} className="max-w-[450px] h-[300px] rounded-xl relative"/>
                             <div className="w-20 h-20 bg-white absolute top-24 rounded-full left-48 text-green-600 hover:bg-green-600 hover:text-white items-center justify-center flex">
-                                <RxTriangleRight size={64}/>
+                                <a href="https://www.youtube.com/watch?v=LdQKD83LV7k">
+                                    <RxTriangleRight size={64}/>
+                                </a>
                             </div>
                         </div>
                         <div className="flex flex-col">

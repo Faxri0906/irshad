@@ -1,13 +1,9 @@
-import { MdMenu, MdOutlineTouchApp } from "react-icons/md";
-import irsad from "../img/irsad.png";
+import { MdOutlineTouchApp } from "react-icons/md";
 import image from "../img/image.png";
 import car from "../img/car.png";
 import cn from "../img/cn.png";
-import { IoIosSearch } from "react-icons/io";
 import { GiHomeGarage, GiScales } from "react-icons/gi";
-import { FaHeart } from "react-icons/fa";
 import { CiShoppingCart } from "react-icons/ci";
-import { LuCreditCard } from "react-icons/lu";
 import { BsShop } from "react-icons/bs";
 import { FcMultipleSmartphones } from "react-icons/fc";
 import { TbCarSuv } from "react-icons/tb";
@@ -16,35 +12,6 @@ import { IoGiftOutline } from "react-icons/io5";
 const Main = () => {
   return (
     <div className="container mt-5">
-        <div className="flex items-center">
-                    <img className="w-28 h-20 mr-10" src={irsad}/>
-                    <button className="flex items-center gap-2 bg-green-600 text-white rounded-md px-4 py-2.5 border-[2px] border-green-600 hover:bg-white hover:text-green-600 mr-3">
-                        <MdMenu size={26}/><p>Kataloq</p>
-                    </button>
-                    <input type="text" className="border-[2px] border-gray-300 rounded-lg w-[500px] h-12 pl-6 focus-visible:outline-none"/>
-                    <div className="absolute left-[865px] flex items-center">
-                        <div className="w-[1px] h-7 bg-gray-300 mr-2.5"></div>
-                        <IoIosSearch size={24} color="gray"/>
-                    </div>
-                    <ul className="flex ml-12 gap-8">
-                        <li className="flex flex-col text-center items-center justify-center cursor-pointer hover:text-orange-500">
-                            <GiScales size={24}/>
-                            <p>Müqayisə</p>
-                        </li>
-                        <li className="flex flex-col text-center items-center justify-center cursor-pointer hover:text-orange-500">
-                            <FaHeart size={24}/>
-                            <p>Bəyəndim</p>
-                        </li>
-                        <li className="flex flex-col text-center items-center justify-center cursor-pointer hover:text-orange-500">
-                            <CiShoppingCart size={24}/>
-                            <p>Səbət</p>
-                        </li>
-                    </ul>
-                    <button className="border-[2px] border-green-600 text-green-600 py-3 px-5 flex flex-col text-center justify-center items-center rounded-lg ml-auto hover:bg-green-600 hover:text-white">
-                        <LuCreditCard size={24}/>
-                        <p className="text-sm font-semibold">Aylıq ödəniş</p>
-                    </button>
-        </div>
         <div className="gap-5 flex mt-5">
                     <img src={image} className="rounded-xl border-[2px] border-gray-400"/>
                     <div className="w-full border-[2px] border-yellow-400 rounded-xl">

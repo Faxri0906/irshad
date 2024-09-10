@@ -14,6 +14,26 @@ import beko from "../img/beko.png";
 import bosch from "../img/bosch.png";
 import canon from "../img/canon.png";
 import hp from "../img/hp.png";
+const images = [
+    {
+        src: asus,
+    },
+    {
+        src: acer,
+    },
+    {
+        src: beko,
+    },
+    {
+        src: bosch,
+    },
+    {
+        src: canon,
+    },
+    {
+        src: hp,
+    },
+];
 const Items = () => {
   return (
     <div className="container mb-10">
@@ -214,24 +234,11 @@ const Items = () => {
                     </div>
         </div>
         <div className="flex justify-between mt-14 items-center">
-                    <div className="border border-gray-300 rounded-lg px-5 py-2">
-                        <img src={asus}/>
-                    </div>
-                    <div className="border border-gray-300 rounded-lg px-5 py-2">
-                        <img src={acer}/>
-                    </div>
-                    <div className="border border-gray-300 rounded-lg px-5 py-2">
-                        <img src={beko}/>
-                    </div>
-                    <div className="border border-gray-300 rounded-lg px-5 py-2">
-                        <img src={bosch}/>
-                    </div>
-                    <div className="border border-gray-300 rounded-lg px-5 py-8">
-                        <img src={canon}/>
-                    </div>
-                    <div className="border border-gray-300 rounded-lg px-5 py-2">
-                        <img src={hp}/>
-                    </div>
+            {images.map((img , index) => (
+                <div className="border border-gray-300 rounded-lg w-[200px] h-[100px] flex items-center justify-center" key={index}>
+                    <img src={img.src}></img>
+                </div>
+            ))}
         </div>
     </div>
   );
