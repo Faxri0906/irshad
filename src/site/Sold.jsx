@@ -8,7 +8,9 @@ import a55 from "../img/a55.png";
 import s24 from "../img/s24.png";
 import ps5 from "../img/ps5.png";
 import stars from "../img/stars.png";
+import { useState } from "react";
 const Sold = () => {
+    const [liked, setLiked] = useState(false);
   return (
     <div className="container mt-16 mb-16">
                 <div className="flex justify-between mb-4">
@@ -29,7 +31,9 @@ const Sold = () => {
                     <div className="h-[700px] w-[320px] border-[2px] border-gray-300 rounded-l-3xl p-5">
                         <div className="flex justify-end gap-5">
                             <GiScales size={28} className="text-gray-300 hover:text-red-500 cursor-pointer"/>
-                            <FaHeart size={28} className="text-gray-300 hover:text-red-500 cursor-pointer"/>
+                            <button onClick={() => setLiked(!liked)}>
+                                <FaHeart className="heart" color={liked ? "#FF8585" : "EAEAEA"} fill={liked ? "#FF8585" : "rgb(209 213 219)"}  size={28}/>
+                            </button>
                         </div>
                         <img className="w-[250px] h-[200px] flex items-center justify-center ml-5" src={s24}/>
                         <div className="mt-3 flex flex-col gap-1.5">
@@ -83,7 +87,9 @@ const Sold = () => {
                     <div className="h-[700px] w-[320px] border-[2px] border-gray-300 p-5">
                         <div className="flex justify-end gap-5">
                             <GiScales size={28} className="text-gray-300 hover:text-red-500 cursor-pointer"/>
-                            <FaHeart size={28} className="text-gray-300 hover:text-red-500 cursor-pointer"/>
+                            <button onClick={() => setLiked(!liked)}>
+                                <FaHeart className="heart" color={liked ? "#FF8585" : "EAEAEA"} fill={liked ? "#FF8585" : "rgb(209 213 219)"}  size={28}/>
+                            </button>
                         </div>
                         <img className="w-[250px] h-[200px] flex items-center justify-center ml-5" src={a55}/>
                         <div className="mt-3 flex flex-col gap-2">
@@ -136,7 +142,9 @@ const Sold = () => {
                     <div className="h-[700px] w-[320px] border-[2px] border-gray-300 p-5">
                         <div className="flex justify-end gap-5">
                             <GiScales size={28} className="text-gray-300 hover:text-red-500 cursor-pointer"/>
-                            <FaHeart size={28} className="text-gray-300 hover:text-red-500 cursor-pointer"/>
+                            <button onClick={() => setLiked(!liked)}>
+                                <FaHeart className="heart" color={liked ? "#FF8585" : "EAEAEA"} fill={liked ? "#FF8585" : "rgb(209 213 219)"}  size={28}/>
+                            </button>
                         </div>
                         <img className="w-[250px] h-[200px] flex items-center justify-center ml-5" src={iphone15}/>
                         <div className="mt-3 flex flex-col gap-2">
@@ -190,7 +198,9 @@ const Sold = () => {
                     <div className="h-[700px] w-[320px] border-[2px] border-gray-300 rounded-r-3xl p-5">
                         <div className="flex justify-end gap-5">
                             <GiScales size={28} className="text-gray-300 hover:text-red-500 cursor-pointer"/>
-                            <FaHeart size={28} className="text-gray-300 hover:text-red-500 cursor-pointer"/>
+                            <button onClick={() => setLiked(!liked)}>
+                                <FaHeart className="heart" color={liked ? "#FF8585" : "EAEAEA"} fill={liked ? "#FF8585" : "rgb(209 213 219)"}  size={28}/>
+                            </button>
                         </div>
                         <img className="w-[250px] h-[200px] flex items-center justify-center ml-5" src={ps5}/>
                         <div className="mt-3 flex flex-col gap-2">

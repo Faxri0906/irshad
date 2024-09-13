@@ -13,7 +13,7 @@ const Main = () => {
   return (
     <div className="container mt-5">
         <div className="gap-5 flex mt-5">
-                    <img src={image} className="rounded-xl border-[2px] border-gray-400"/>
+                    <img src={image} className="rounded-xl border-[2px] border-gray-400 "/>
                     <div className="w-full border-[2px] border-yellow-400 rounded-xl">
                         <div className="flex bg-yellow-400 font-semibold p-4 rounded-t-lg justify-between">
                             <p>Həftənin təklifi</p>

@@ -47,7 +47,7 @@ const Navbar = () => {
                         Kondisionerlər
                     </button>
                 </div>
-                <ul className="flex items-center gap-5 ml-[75px]">
+                <ul className="flex items-center gap-5 ml-[165px]">
                     <li className="cursor-pointer text-[40px] font-bold text-green-600">
                         *<span className="text-[26px] text-black/70">0171</span>
                     </li>
@@ -72,7 +72,7 @@ const Navbar = () => {
                         <MdMenu size={26}/><p>Kataloq</p>
                     </button>
                     <input type="text" className="border-[2px] border-gray-300 rounded-lg w-[500px] h-12 pl-6 focus-visible:outline-none"/>
-                    <div className="absolute left-[865px] flex items-center">
+                    <div className="absolute left-[865px] flex items-center xl:left-[720px]">
                         <div className="w-[1px] h-7 bg-gray-300 mr-2.5"></div>
                         <IoIosSearch size={24} color="gray"/>
                     </div>
@@ -90,7 +90,7 @@ const Navbar = () => {
                             </a>
                         </li>
                         <li className="flex flex-col text-center items-center justify-center cursor-pointer hover:text-orange-500">
-                            <a href="/" className="flex flex-col text-center items-center justify-center">
+                            <a href="/cart" className="flex flex-col text-center items-center justify-center">
                                 <CiShoppingCart size={24}/>
                                 <p>Səbət</p>
                             </a>
