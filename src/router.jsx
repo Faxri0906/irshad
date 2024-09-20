@@ -7,8 +7,7 @@ import Korporativ from "./pages/Korporativ";
 import Liked from "./pages/Liked";
 import Müqayisə from "./pages/Müqayisə";
 import Cart from "./pages/Cart-page";
-const App = () => {
-  const router = createBrowserRouter([
+export const router = createBrowserRouter([
     {
       path: "/",
       element: <Layout />,
@@ -43,10 +42,4 @@ const App = () => {
         },
       ],
     },
-  ]);
-  return (
-      <RouterProvider router={router}/>
-  );
-};
-
-export default App;
+]);
