@@ -71,10 +71,12 @@ const Navbar = () => {
                     <button className="flex items-center gap-2 bg-green-600 text-white rounded-md px-4 py-2.5 border-[2px] border-green-600 hover:bg-white hover:text-green-600 mr-3">
                         <MdMenu size={26}/><p>Kataloq</p>
                     </button>
-                    <input type="text" className="border-[2px] border-gray-300 rounded-lg w-[500px] h-12 pl-6 focus-visible:outline-none"/>
-                    <div className="absolute left-[865px] flex items-center xl:left-[720px]">
-                        <div className="w-[1px] h-7 bg-gray-300 mr-2.5"></div>
-                        <IoIosSearch size={24} color="gray"/>
+                    <div className="relative flex items-center">
+                        <input type="text" className="border-[2px] border-gray-300 rounded-lg w-[500px] h-12 pl-6 focus-visible:outline-none"/>
+                        <div className="absolute flex items-center left-[450px]">
+                            <div className="w-[1px] h-7 bg-gray-300 mr-2.5"></div>
+                            <IoIosSearch size={24} color="gray"/>
+                        </div>
                     </div>
                     <ul className="flex ml-12 gap-8">
                         <li className="flex flex-col text-center items-center justify-center cursor-pointer hover:text-orange-500">
