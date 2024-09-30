@@ -1,6 +1,6 @@
 import Cart2 from "../components/views/Cart/cart-item";
 import useCartStore from "../hooks/useCart";
-const Cart = () => {
+const CartPage = () => {
   const { cartItems } = useCartStore();
   return (
     <div className="container mt-5">
@@ -12,4 +12,4 @@ const Cart = () => {
   )
 }
 
-export default Cart;
+export default CartPage;
