@@ -9,7 +9,7 @@ const Korporativ = () => {
                 <h2 className="text-[25px] font-semibold mb-8">İrşad Korporativ şöbəsi ölkənin bir çox tanınmış şirkətləri ilə əməkdaşlıq edir. Ümumilikdə 2500-dən çox şirkət, publik hüquqi şəxslər, dövlət qurumlarını əhatə edən əməkdaşlıq çərçivəsində Korporativ şöbə müştərilərinə xüsusi həssaslıqla yanaşır.</h2>
                 <h3 className="text-xl font-semibold mb-5">Korporativ üstünlüklərimiz</h3>
                 <div className="">
-                    <div className="flex">
+                    <div className="flex flex-col xl:flex-row">
                         <div className="">
                             <div className="">
                                 <p className="text-lg"><span className="text-xl font-semibold">Qiymət strategiyası: </span>Korporativ müştərilər daim Korporativ seqmentə xas olan xüsusi endirimlərdən yararlana bilirlər.</p>
@@ -85,7 +85,7 @@ const Korporativ = () => {
                     <p>İsmarıc</p>
                     <input className="border rounded-lg outline-none border-gray-400 w-full h-32" type="text" />
                 </div>
-                <button className="flex gap-1.5 w-52 h-12 ml-[1000px] items-center justify-center mt-4 bg-green-600 text-white hover:bg-white hover:text-green-600 rounded-xl font-semibold text-lg border-[2px] border-green-600">
+                <button className="flex gap-1.5 w-52 h-12 xl:ml-[1000px] ml-[334px] md:ml-[464px] lg:ml-[684px] items-center justify-center mt-4 bg-green-600 text-white hover:bg-white hover:text-green-600 rounded-xl font-semibold text-lg border-[2px] border-green-600">
                     <p>Təsdiq et</p>
                 </button>
             </div>

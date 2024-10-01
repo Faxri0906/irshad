@@ -6,12 +6,12 @@ import man2 from "../img/man2.png";
 const Youtube = () => {
   return (
     <div className="container mb-16">
-                <div className="flex justify-between">
+                <div className="flex justify-between flex-col md:flex-row">
                     <div className="flex gap-4">
-                        <h1 className="text-4xl font-semibold">Məhsul icmalı</h1>
-                        <h1 className="text-4xl font-semibold text-black/40">İrşad Youtube</h1>
+                        <h1 className="text-[26px] lg:text-4xl font-semibold">Məhsul icmalı</h1>
+                        <h1 className="text-[26px] lg:text-4xl font-semibold text-black/40">İrşad Youtube</h1>
                     </div>
-                    <button className="bg-red-500 text-white p-3 text-lg font-medium rounded-xl hover:bg-white hover:text-red-500 border-[2px] border-red-500">
+                    <button className="bg-red-500 text-white p-3 text-lg font-medium rounded-xl hover:bg-white hover:text-red-500 border-[2px] border-red-500 w-[300px]">
                         <a className="flex items-center gap-4" href="https://www.youtube.com/c/irshad">
                             <PiYoutubeLogoFill size={28}/>
                             <p>Youtube hesabına keç</p>
@@ -19,10 +19,10 @@ const Youtube = () => {
                     </button>
                 </div>
                 <div className="mt-10 flex gap-[23px]">
-                    <div className="max-w-[450px] flex flex-col gap-6">
+                    <div className="lg:max-w-[450px] flex flex-col gap-6 max-w-[350px]">
                         <div className="relative cursor-pointer">
-                            <img src={woman} className="max-w-[450px] h-[300px] rounded-xl relative"/>
-                            <div className="w-20 h-20 bg-white absolute top-24 rounded-full left-48 text-green-600 hover:bg-green-600 hover:text-white items-center justify-center flex">
+                            <img src={woman} className="max-w-[350px] lg:max-w-[450px] h-[300px] rounded-xl relative"/>
+                            <div className="w-20 h-20 bg-white absolute top-24 rounded-full left-40 lg:left-48 text-green-600 hover:bg-green-600 hover:text-white items-center justify-center flex">
                                 <a href="https://www.youtube.com/watch?v=BDXkW2yPVPc">
                                     <RxTriangleRight size={64}/>
                                 </a>
@@ -37,10 +37,10 @@ const Youtube = () => {
                             </p>
                         </div>
                     </div>
-                    <div className="max-w-[450px] flex flex-col gap-6">
+                    <div className="lg:max-w-[450px] md:flex flex-col gap-6 hidden max-w-[350px]">
                         <div className="relative cursor-pointer">
-                            <img src={man} className="max-w-[450px] h-[300px] rounded-xl relative"/>
-                            <div className="w-20 h-20 bg-white absolute top-24 rounded-full left-48 text-green-600 hover:bg-green-600 hover:text-white items-center justify-center flex">
+                            <img src={man} className="lg:max-w-[450px] h-[300px] rounded-xl relative max-w-[350px]"/>
+                            <div className="w-20 h-20 bg-white absolute top-24 rounded-full left-36 lg:left-48 text-green-600 hover:bg-green-600 hover:text-white items-center justify-center flex">
                                 <a href="https://www.youtube.com/watch?v=ghGySce348c">
                                     <RxTriangleRight size={64}/>
                                 </a>
@@ -56,7 +56,7 @@ const Youtube = () => {
                             </p>
                         </div>
                     </div>
-                    <div className="max-w-[450px] flex flex-col gap-6">
+                    <div className="max-w-[450px] xl:flex flex-col gap-6 hidden">
                         <div className="relative cursor-pointer">
                             <img src={man2} className="max-w-[450px] h-[300px] rounded-xl relative"/>
                             <div className="w-20 h-20 bg-white absolute top-24 rounded-full left-48 text-green-600 hover:bg-green-600 hover:text-white items-center justify-center flex">
@@ -80,7 +80,7 @@ const Youtube = () => {
                         </div>
                     </div>
                 </div>
-            </div>
+    </div>
   );
 };
 

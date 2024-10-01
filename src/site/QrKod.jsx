@@ -9,14 +9,14 @@ const QrKod = () => {
                             <p>Daha ətraflı</p>
                         </button>
                     </div>
-                    <div className="flex flex-col gap-4 pr-28">
+                    <div className="lg:flex flex-col gap-4 xl:pr-28 hidden">
                         <img className="rounded-xl w-[250px] h-[250px]" src={qrKod}/>
                         <p className="text-gray-200 text-lg">Yükləmək üçün skan et</p>
                     </div>
                 </div>
                 <div className="mt-10 flex">
                     <div className="h-3 w-72 bg-green-600"></div>
-                    <div className="w-5 h-5 bg-white rounded-full absolute left-[310px] top-[3750px]"></div>
+                    <div className="w-5 h-5 bg-white rounded-full absolute left-[310px] top-[3787px] 2xl:block hidden"></div>
                     <div className="h-3 w-full bg-orange-500"></div>
                 </div>
             </div>

@@ -15,10 +15,10 @@ const Sold = () => {
     <div className="container mt-16 mb-16">
                 <div className="flex justify-between mb-4">
                     <div className="flex gap-4">
-                        <h1 className="text-4xl font-semibold">Çox satılanlar</h1>
-                        <h1 className="text-4xl font-semibold text-black/40">Endirimli məhsullar</h1>
+                        <h1 className=" text-[22px] lg:text-4xl font-semibold">Çox satılanlar</h1>
+                        <h1 className=" text-[22px] lg:text-4xl font-semibold text-black/40">Endirimli məhsullar</h1>
                     </div>
-                    <div className="flex gap-5">
+                    <div className="lg:flex gap-5 hidden">
                         <div className="w-[60px] h-[60px] bg-white cursor-pointer shadow-2xl items-center justify-center flex rounded-full hover:bg-black hover:text-white">
                             <IoArrowBack size={32}/>
                         </div>
@@ -27,8 +27,8 @@ const Sold = () => {
                         </div>
                     </div>
                 </div>
-                <div className="flex">
-                    <div className="h-[700px] w-[320px] border-[2px] border-gray-300 rounded-l-3xl p-5">
+                <div className="xl:flex grid grid-cols-1 2sm:grid-cols-2">
+                    <div className="h-[720px] w-[320px] border-[2px] border-gray-300 xl:rounded-l-3xl p-5">
                         <div className="flex justify-end gap-5">
                             <GiScales size={28} className="text-gray-300 hover:text-red-500 cursor-pointer"/>
                             <button onClick={() => setLiked(!liked)}>
@@ -84,7 +84,7 @@ const Sold = () => {
                             <p>Səbətə əlavə et</p>
                         </button>
                     </div>
-                    <div className="h-[700px] w-[320px] border-[2px] border-gray-300 p-5">
+                    <div className="h-[720px] w-[320px] border-[2px] border-gray-300 p-5">
                         <div className="flex justify-end gap-5">
                             <GiScales size={28} className="text-gray-300 hover:text-red-500 cursor-pointer"/>
                             <button onClick={() => setLiked(!liked)}>
@@ -139,7 +139,7 @@ const Sold = () => {
                             <p>Səbətə əlavə et</p>
                         </button>
                     </div>
-                    <div className="h-[700px] w-[320px] border-[2px] border-gray-300 p-5">
+                    <div className="h-[720px] w-[320px] border-[2px] border-gray-300 p-5">
                         <div className="flex justify-end gap-5">
                             <GiScales size={28} className="text-gray-300 hover:text-red-500 cursor-pointer"/>
                             <button onClick={() => setLiked(!liked)}>
@@ -195,7 +195,7 @@ const Sold = () => {
                             <p>Səbətə əlavə et</p>
                         </button>
                     </div>
-                    <div className="h-[700px] w-[320px] border-[2px] border-gray-300 rounded-r-3xl p-5">
+                    <div className="h-[720px] w-[320px] border-[2px] border-gray-300 xl:rounded-r-3xl p-5">
                         <div className="flex justify-end gap-5">
                             <GiScales size={28} className="text-gray-300 hover:text-red-500 cursor-pointer"/>
                             <button onClick={() => setLiked(!liked)}>

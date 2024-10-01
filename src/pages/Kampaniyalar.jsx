@@ -48,7 +48,7 @@ const Kampaniyalar = () => {
     <div className="container flex flex-col gap-5 mb-40 cursor-pointer">
         <p className="text-gray-400 flex gap-3 items-center">Irşad<div className="bg-black w-1 h-1 rounded-full"></div><span className="text-black">Kampaniyalar</span></p>
         <h1 className="text-4xl font-semibold">Kampaniyalar</h1>
-        <div className="grid grid-cols-3 gap-4">
+        <div className="grid xl:grid-cols-3 grid-cols-1 lg:grid-cols-2 gap-4">
             {cards.map((card , index) => (
                 <div className="border-gray-400 border-[2px] rounded-xl w-[400px] h-[450px]" key={index}>
                     <img src={card.img} className="rounded-t-xl"/>

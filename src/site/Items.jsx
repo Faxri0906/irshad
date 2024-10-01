@@ -62,6 +62,48 @@ const cards = [
         price: '59.99 AZN',
     },
 ];
+const cardsXs = [
+    {
+        img: thing,
+        title: 'Zelmer ZNT0300',
+        id: 0,
+        price: '29.99 AZN',
+    },
+];
+const cardsSm = [
+    {
+        img: thing,
+        title: 'Zelmer ZNT0300',
+        id: 0,
+        price: '29.99 AZN',
+    },
+    {
+        img: toy,
+        title: 'Computer Learning Machine Bei Tian BT-246R Toys',
+        id: 1,
+        price: '49.99 AZN',
+    },
+];
+const cardsLg = [
+    {
+        img: thing,
+        title: 'Zelmer ZNT0300',
+        id: 0,
+        price: '29.99 AZN',
+    },
+    {
+        img: toy,
+        title: 'Computer Learning Machine Bei Tian BT-246R Toys',
+        id: 1,
+        price: '49.99 AZN',
+    },
+    {
+        img: tv,
+        title: 'Samsung 50" LED Smart TV 4K UHD (QE50Q60DAUXRU)',
+        id: 2,
+        price: '2069.99 AZN',
+    },
+];
 const Items = () => {
     const [liked, setLiked] = useState(false);
     const [price,img,title,id,card] = cards;
@@ -72,11 +114,11 @@ const Items = () => {
   return (
     <div className="container mb-10">
         <div className="flex justify-between mb-4">
-                    <div className="flex gap-4">
+                    <div className="flex gap-4 flex-col md:flex-row">
                         <h1 className="text-4xl font-semibold">Populyar məhsullar</h1>
-                        <h1 className="text-4xl font-semibold text-black/40">Yeni məhsullar</h1>
+                        <h1 className="lg:text-4xl text-3xl font-semibold text-black/40">Yeni məhsullar</h1>
                     </div>
-                    <div className="flex gap-5">
+                    <div className="lg:flex gap-5 hidden">
                         <div className="w-[60px] h-[60px] bg-white cursor-pointer shadow-2xl items-center justify-center flex rounded-full hover:bg-black hover:text-white">
                             <IoArrowBack size={32}/>
                         </div>
@@ -85,9 +127,9 @@ const Items = () => {
                         </div>
                     </div>
         </div>
-        <div className="flex">
+        <div className="xl:flex grid grid-cols-1 2sm:grid-cols-2 gap-4 xl:gap-0">
                     {cards.map(( card , index ) => (
-                        <div className="h-[700px] w-[320px] border-[2px] border-gray-300 p-5" key={index}>
+                        <div className="h-[720px] w-[320px] border-[2px] border-gray-300 p-5" key={index}>
                             <div className="flex justify-end gap-5">
                                 <GiScales size={28} className="text-gray-300 hover:text-red-500 cursor-pointer"/>
                                 <button onClick={() => setLiked(!liked)}>
@@ -140,7 +182,7 @@ const Items = () => {
                         </div>
                     ))}
         </div>
-        <div className="flex justify-between mt-14 items-center">
+        <div className="xl:flex justify-between mt-14 items-center grid grid-cols-1 gap-5 ml-[72px] sm:grid-cols-2 lg:grid-cols-3">
             {images.map((img , index) => (
                 <div className="border border-gray-300 rounded-lg w-[200px] h-[100px] flex items-center justify-center" key={index}>
                     <img src={img.src}></img>
